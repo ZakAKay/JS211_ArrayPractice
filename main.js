@@ -94,11 +94,12 @@ console.log('pets array after unshift method', pets);
 //       * Build a function called `addTwo` that can take in num, index, and arr as parameters—`(num, index, arr)`—and returns `num + 2` at each `index` of the `arr`.
 //       * Use `.forEach()` on the `numbers` array, passing in your freshly built function `addTwo` as an argument, in order to add 2 to each number in the array.
 //    * Console.log `numbers` and run the program.
-let numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
-let newArray = numbers.forEach((item) => item + 2)
-console.log('numbers array after forEach method', newArray)
-
-
+// let numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
+//  numbers.forEach((item) => console.log(item + 2))
+//WHY DOES THIS NOT WORK IN REPLIT???
 // function add2(item){
 //   return item + 2;
 // }
+let numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
+ let newArray = numbers.map((item) => item + 2)
+console.log('numbers array after forEach method', newArray)
